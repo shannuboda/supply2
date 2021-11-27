@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>File</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<img src="https://site-sjqfpwc8.websiteserver3.com/upload/1146696/images/optimize/8158D8BF174F2623.webp" alt="SVCK LOGO" class="img1">
+<img src="https://site-sjqfpwc8.websiteserver3.com/upload/1146696/images/optimize/9497EFEA1FB0984B.jpg" alt="SITE LOGO" class="img2">
+<h1 class="A1">SVCK SUPPLY APPLICATION FORM</h1>
+<br>
+<h1 class="A2">FIRST YEAR FIRST SEMESTER</h1><br>
+<h1 class="A3">REGULATION:<u>R19</u></h1><hr color="pink">
+<table>
+<form>
+<td>
+	<p class="heading">ROLL NUMBER</p>
+</td>
+<td>
+		<input type ="text" name="RollNum" class="name" placeholder="ENTER ROLL NUMBER" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<td><p class="heading">FULL NAME</p></td>
+ <td>
+		<input type ="text" name="RollNum" class="name2" placeholder="ENTER NAME" required></td>
+
+</table>
+<hr color="red"/>
+<h2> ELECTRONICS AND COMMUNICATION ENGINEERING</h2>
+<hr color="#FA02BB"/>
+<form method="post">
+<table id="subjects">
+  <tr>
+    <th>SUBJECT CODE</th>
+    <th>SUBJECT</th>
+    <th>select</th>
+  </tr>
+  <tr>
+    <td><p><b>19A54101</b></p></td>
+    <td><p><b>Algebra and Calculus</b></p></td>
+    <td> <input type="checkbox"></td>
+  </tr>
+   <tr>
+    <td> <b>19A56101T</b></td>
+    <td><b>Applied Physics</b></td>
+    <td> <input type="checkbox"> </td>
+  </tr>
+  <tr>
+    <td> <b>19A05101T</b></td>
+    <td><b>Problem Solving & Programming</b></td>
+    <td> <input type="checkbox"> </td>
+  </tr>
+  <tr>
+    <td> <b>19A52101T</b></td>
+    <td><b>Communicative English - I </b></td>
+    <td> <input type="checkbox"> </td>
+  </tr>
+  <tr>
+  <td> <label class="w3-text-green"><b>TOTAL APPLIED SUBJECTS </b></label></td>
+  <td>
+  <select name="tot_pin_requested" onchange="calculateAmount(this.value)" required>
+			<option value="" disabled selected>Choose your option</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+	</td>
+	</tr>
+	<tr>
+        <td><b>Total Amount</b></td>
+        <td><input class="" name="tot_amount" id="tot_amount" type="text" readonly></td>
+	</tr>
+	</table>
+</form>
+	
+<h2 align="right"><sup> EXAM SECTION SIGNATURE</sup></h2>
+<button onclick="printfunction()" class="button"> PRINT PAGE</button> <hr color="red"></hr>
+	<h2 class="A4">DESIGNED BY :</h2>
+	<h2 class="A5">B.S.SUBRAMANI, Dept of CSE, SVCK </h2>
+</body>
+
+
+<script type="text/javascript">
+function calculateAmount(val) {
+                var tot_price = val * 150;
+                /*display the result*/
+                var divobj = document.getElementById('tot_amount');
+                divobj.value = tot_price;
+				}
+			
+function printfunction()
+{
+	window.print();
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+<style>
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 5px;
+  width: 280px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+#subjects {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#subjects td, #subjects th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#subjects tr:nth-child(even){background-color: #f2f2f2;}
+
+#subjects tr:hover {background-color: #ddd;}
+
+#subjects th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: RED;
+  color: white;
+}
+input[type="checkbox"]
+{
+    zoom:1.5;
+}
+.img1
+ {
+ width:100;
+ height:100;
+ float:left;
+ }
+.img2
+ {
+ width:100;
+ height:100;
+ float:right;
+ }
+ 
+.A1
+{
+font-family:URW Gothic;
+color:red;
+text-align:center;
+font-size:3.5em;
+ margin:0;
+  padding:0;
+}
+.A2,.A3,.heading
+{
+color:#0F2C67;
+text-align:center;
+font-style:bold;
+font-size:2.2em;
+ margin:0;
+  padding:0;
+}
+input[type="text"]
+{
+    font-size:22px;
+	color:red;
+}
+</style>
+</html>
